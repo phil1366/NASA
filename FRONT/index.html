@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Un site qui parle de galaxies et d'étoiles">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidenav.js">
+    <title>NASA</title>
+</head>
+
+<body>
+
+    <!-- Bannière -->
+    <div id="banner">
+        <div class="logo">
+            <img src="/FRONT/images/NASA_logo.svg.png" alt="logo">             
+            <div class="fireball"><img src="/FRONT/images/logo.png" alt="planet_feu"></div>                 
+        </div>             
+        
+        <nav>
+            <ul class="navbar">
+                <li><a class="nav-link" href="#">Accueil</a></li>
+                <li><a class="nav-link" href="#">À propos</a></li>
+                <li><a class="nav-link" href="#">Services</a></li>
+                <li><a class="nav-link" href="#">Blog</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <a href="https://www.decathlon.fr/" target="_blank"><i class="fa-solid fa-shop"></i></a>
+        </nav>
+
+        <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>
+    </div>
+    
+    <!--container -->
+    <main>
+        <section class="container">
+            <div class="card">
+                <div class="card1">
+                    <h2>Black hole</h2>
+                    <p>Aliquam tempus, erat ut aliquet finibus, nibh lectus lacinia
+                        velit, nec laoreet felis ipsum non, erat ut aliquet finibus
+                        vonsectetur adipisicing elit. Quisquam possimus itaque quos quasi
+                        dolore architecto totam inventore.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card2">
+                    <h2>Meteor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eget
+                        placerat vel in metus. Aliquam tempus, erat ut aliquet finibus, lacinia
+                        velit, nec laoreet felis ipsum non ex crem recusandae sint temporibus,
+                        o magni et officia.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card3">
+                    <h2>Cosmos</h2>
+                    <p>Loremnibh lectus lacinia velit, nec laoreet felis ipsum non adipiscing elit.
+                        Augue consequat lacerat vel in metus. Aliquam tempus, erat ut aliquet finibus, nibh lectus
+                        lacinia velit, nec laoreet felis ipsum non ex placerat vel in metus.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card4">
+                    <h2>Earth</h2>
+                    <p>Placerat vel in metus. Aliquam tempus, erat ut aliquet sit amet, consectetur.
+                        placerat vel in metus. Aliquam tempus, erat ut aliquet finibus, nibh lectus lacinia
+                        velit, nec laoreet felis ipsum dolor sit amet, reprehenderit.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </main>
+
+    <!-- Aside -->
+    <aside>
+        <h2>Le cosmos - Les exoplanètes</h2>
+        <p> Si notre galaxie compte plusieurs dizaines de milliards de planètes semblables à la Terre,
+            la plupart ne se prêtent pas à l’apparition de la vie. <br>
+            En 1995, la découverte de la première exoplanète
+            une planète située en dehors de notre Système solaire – ouvre considérablement le champ de la recherche
+            scientifique. <br>
+            Aujourd’hui, quelque 4 500 exoplanètes sont recensées, tandis que des appareils de plus en plus
+            sophistiqués permettent
+            d’en étudier les caractéristiques. Réunissent-elles les conditions nécessaires au développement de la
+            vie ?
+        </p>
+    </aside>
+
+    <hr>
+
+    <!-- Slider -->
+
+    <div class="carousel">
+        <div class="slide active">
+            <img src="/FRONT/images/caroussel.webp" alt="Slide 1" loading="lazy">
+            <div class="caption"></div>
+        </div>
+
+        <div class="slide">
+            <img src="/FRONT/images/purpleblue.webp" alt="Slide 2" loading="lazy">
+            <div class="caption">
+            </div>
+        </div>
+        <div class="slide">
+            <img src="/FRONT/images/implosion.webp" alt="Slide 3" loading="lazy">
+            <div class="caption">
+            </div>
+        </div>
+        <div class="slide">
+            <img src="/FRONT/images/planete.png" alt="Slide 4" loading="lazy">
+            <div class="caption">
+            </div>
+        </div>
+
+        <button class="prev"><i class="fa-sharp fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="reseaux">
+            <a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+            <a href="https://www.pinterest.fr/" target="_blank"><i class="fab fa-pinterest fa-3x"></i></a>
+            <a href="https://twitter.com/?lang=fr" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
+        </div>
+        <div class="contact">
+            <a href="mailto:dslame@gmail.com">Contactez-nous</a>
+        </div>
+    </footer>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Accueil</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#"><i class="fa-solid fa-shop"></i></a>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+@import "./css/1-global.css";
+@import "./css/2-banner.css";
+@import "./css/3-container.css";
+@import "./css/4-aside.css";
+@import "./css/5-carousel.css";
+@import "/FRONT/css/6-footer.css";
+
+/* #banner{display:none;} */
+/* .container{display:none;} */
+/* aside{display:none;} */
+/* .carousel{display:none;} */
+/* footer{display:none;} */
+
+.fa-bars, .sidepanel {
+  visibility: hidden;
+}
+
+.fireball{
+  visibility: hidden;
+}
+
+/* media queries 980px */
+
+@media (max-width: 980px) {
+  
+#banner {
+    visibility: hidden;   
+}
+
+.logo > img{
+  visibility: visible;
+  position: absolute;
+  left: 40%;
+  width: 15%;
+}
+
+.fireball {
+  position: absolute;
+  right: 3%;  
+  visibility: visible;
+}
+
+  .openbtn, .fa-bars {
+    visibility: visible;
+  }
+
+  .openbtn {
+    display: block;
+    border-radius: 5px;
+    width: 58px;
+    height: 40px;
+    margin-top: -400px;
+    margin-left: 13px;
+  }
+
+  .fa-bars{
+    color: purple;
+    font-size: 22px;
+  }
+
+  .sidepanel  {    
+    position: fixed;
+    z-index: 1;
+    height: 55vh;
+    width: 25%;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 48px;
+  }
+
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    line-height: 2;
+  }
+
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+
+ .fa-shop{
+    margin-top: 30px;
+    margin-right: 45%;
+ } 
+}
+
+
+@media (max-width: 480px) {
+  .banner a {
+    font-size: 20px;
+  }
+  .navbar .navbar-brand {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .container .rect {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .slider {
+    height: 300px;
+  }
+  .slider .carousel-indicators {
+    bottom: 5px;
+  }
+  .slider .carousel-inner .carousel-item {
+    height: 300px;
+  }
+}

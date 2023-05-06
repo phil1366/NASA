@@ -1,0 +1,22 @@
+:root {
+    --text-white: #FFF; 
+    --text-primary: purple; 
+  /*  --text-secondary: #666; 
+    --text-light: #aaa;    */
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	background-image: url(/FRONT/images/planete.png);
+	background-size: cover;
+	background-position: center left;    
+}
+
+hr {
+  visibility: hidden;
+}

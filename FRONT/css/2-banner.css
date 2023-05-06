@@ -1,0 +1,58 @@
+#banner {
+  background-color: purple;
+  border: 2px solid red;
+  height: 150px;
+}
+
+.logo img {
+  height: 90px;
+  margin: 30px 20px;
+  float: left;
+}
+
+.logo span{
+  display: none;
+}
+
+#banner nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20%;
+  font-size: 26px;
+  list-style: none;
+}
+
+#banner a {
+  color: white;
+  line-height: 6;
+  text-decoration: none;
+}
+
+#banner a:hover {
+  text-decoration: underline;
+}
+
+.fa-shop {
+  display: flex;
+  justify-content: right;
+  margin-right: 5%;
+  margin-top: -91px;
+  font-size: 30px;
+}
+ 
+.openbtn {
+	visibility: hidden;	
+}
+
+
+/* media queries */
+
+@media (max-width: 980px) {
+
+#banner a{
+  display: flex;
+  margin-top: 120px;
+}
+
+
+}
