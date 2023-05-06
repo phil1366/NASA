@@ -10,7 +10,7 @@
   float: left;
 }
 
-.logo span{
+.logo span {
   display: none;
 }
 
@@ -39,20 +39,18 @@
   margin-top: -91px;
   font-size: 30px;
 }
- 
-.openbtn {
-	visibility: hidden;	
-}
 
+.openbtn {
+  visibility: hidden;
+}
 
 /* media queries */
 
 @media (max-width: 980px) {
+  #banner a {
+    display: flex;
+    margin-top: 120px;
+  }
 
-#banner a{
-  display: flex;
-  margin-top: 120px;
-}
-
-
+ 
 }

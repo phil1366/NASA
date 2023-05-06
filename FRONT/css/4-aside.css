@@ -1,5 +1,5 @@
 aside {
-  background: url(/FRONT/images/background-center.webp) no-repeat;
+  background: url(/FRONT/images/background-center.webp);
   background-position: 65%;
   width: 95%;
   height: 300px;
@@ -23,12 +23,18 @@ aside p {
 /* media queries */
 
 @media (max-width: 980px) {
+  aside {
+    height: 390px;
+  }
+
   aside h2 {
     font-size: 22px;
+    padding-top: -30px;
   }
 
   aside p {
-    font-size: 15px;
+    font-size: 17px;
+    line-height: 1.5;
   }
 }
 
@@ -36,7 +42,7 @@ aside p {
   aside {
     margin: 98px auto 98px;
     width: 90%;
-    height: 450px;
+    height: 530px;
   }
 
   aside h2 {
@@ -47,7 +53,7 @@ aside p {
     font-size: 17px;
   }
 
-  body > hr {    
-    margin: -40px auto 60px;    
+  body > hr {
+    margin: -40px auto 60px;
   }
 }

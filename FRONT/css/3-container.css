@@ -14,7 +14,7 @@
 }
 
 .card1 {
-  background: url(/FRONT/images/blackhole.webp) no-repeat;
+  background: url(/FRONT/images/blackhole.webp);
   height: 215px;
   margin: auto;
   width: 100%;
@@ -30,7 +30,7 @@
 }
 
 .card2 {
-  background: url(/FRONT/images/meteor.webp) no-repeat;
+  background: url(/FRONT/images/meteor.webp);
   height: 215px;
   width: 100%;
 }
@@ -44,7 +44,7 @@
 }
 
 .card3 {
-  background: url(/FRONT/images/cosmos.webp) no-repeat;
+  background: url(/FRONT/images/cosmos.webp);
   height: 215px;
   width: 100%;
 }
@@ -58,7 +58,7 @@
 }
 
 .card4 {
-  background: url(/FRONT/images/Earth.webp) no-repeat;
+  background: url(/FRONT/images/Earth.webp);
   height: 215px;
   width: 100%;
 }

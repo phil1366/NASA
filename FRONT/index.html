@@ -9,7 +9,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sidenav.js">
-    <link rel="stylesheet" href="./script.js">
     <title>NASA</title>
 </head>
 
@@ -19,7 +18,7 @@
     <div id="banner">
         <div class="logo">
             <img src="/FRONT/images/NASA_logo.svg.png" alt="logo">
-            <div class="fireball"><img src="/FRONT/images/logo.png" alt="planet_feu"></div>
+            <div class="fireball"><img src="/FRONT/images/logo.webp" alt="planet_feu"></div>
         </div>
 
         <nav>
@@ -30,6 +29,7 @@
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+
             <a href="https://destination-orbite.net/" target="_blank"><i class="fa-solid fa-shop"></i></a>
         </nav>
 
@@ -88,14 +88,11 @@
     <aside>
         <h2>Le cosmos - Les exoplanètes</h2>
         <p> Si notre galaxie compte plusieurs dizaines de milliards de planètes semblables à la Terre,
-            la plupart ne se prêtent pas à l’apparition de la vie. <br>
-            En 1995, la découverte de la première exoplanète
-            une planète située en dehors de notre Système solaire – ouvre considérablement le champ de la recherche
-            scientifique. <br>
-            Aujourd’hui, quelque 4 500 exoplanètes sont recensées, tandis que des appareils de plus en plus
-            sophistiqués permettent
-            d’en étudier les caractéristiques. Réunissent-elles les conditions nécessaires au développement de la
-            vie ?
+            la plupart ne se prêtent pas à l’apparition de la vie. En 1995, la découverte de la première 
+            exoplanète une planète située en dehors de notre Système solaire ouvre considérablement le champ
+            de la recherche scientifique. Aujourd’hui, quelque 4 500 exoplanètes sont recensées, tandis que des 
+            appareils de plus en plus sophistiqués permettent d’en étudier les caractéristiques. 
+            Réunissent-elles les conditions nécessaires au développement de la vie ?
         </p>
     </aside>
 
@@ -103,31 +100,27 @@
 
     <!-- Slider -->
 
-    <div class="carousel">
-        <div class="slide active">
-            <img src="/FRONT/images/caroussel.webp" alt="Slide 1" loading="lazy">
-            <div class="caption"></div>
+    <div class="slider-container">
+        <div class="menu">
+            <label for="slide-dot-1"></label>
+            <label for="slide-dot-2"></label>
+            <label for="slide-dot-3"></label>
+            <label for="slide-dot-4"></label>
         </div>
 
-        <div class="slide">
-            <img src="/FRONT/images/purpleblue.webp" alt="Slide 2" loading="lazy">
-            <div class="caption">
-            </div>
-        </div>
-        <div class="slide">
-            <img src="/FRONT/images/implosion.webp" alt="Slide 3" loading="lazy">
-            <div class="caption">
-            </div>
-        </div>
-        <div class="slide">
-            <img src="/FRONT/images/planete.png" alt="Slide 4" loading="lazy">
-            <div class="caption">
-            </div>
-        </div>
+        <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+        <img class="slide-img" src="/FRONT/images/caroussel.webp" alt="Slide 1" loading="lazy">
 
-        <button class="prev"><i class="fa-sharp fa-solid fa-arrow-left"></i></button>
-        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+        <img class="slide-img" src="/FRONT/images/purpleblue.webp" alt="Slide 2" loading="lazy">">
+
+        <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+        <img class="slide-img" src="/FRONT/images/implosion.webp" alt="Slide 3" loading="lazy">">
+
+        <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
+        <img class="slide-img" src="/FRONT/images/storm.webp" alt="Slide 4" loading="lazy">
     </div>
+
 
     <!-- footer -->
 
@@ -143,17 +136,7 @@
         </div>
     </footer>
 
-    <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">Accueil</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-        <a href="#"><i class="fa-solid fa-shop"></i></a>
-    </div>
-
-<!--   <script>
+    <script>
         function openNav() {
             document.getElementById("mySidepanel").style.width = "250px";
         }
@@ -161,7 +144,7 @@
         function closeNav() {
             document.getElementById("mySidepanel").style.width = "0";
         }
-    </script> -->
+    </script>
 </body>
 
 </html>
