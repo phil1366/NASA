@@ -11,36 +11,37 @@
 /* .carousel{display:none;} */
 /* footer{display:none;} */
 
-.fa-bars, .sidepanel {
+.fa-bars,
+.sidepanel {
   visibility: hidden;
 }
 
-.fireball{
+.fireball {
   visibility: hidden;
 }
 
 /* media queries 980px */
 
 @media (max-width: 980px) {
-  
-#banner {
-    visibility: hidden;   
-}
+  #banner {
+    visibility: hidden;
+  }
 
-.logo > img{
-  visibility: visible;
-  position: absolute;
-  left: 40%;
-  width: 15%;
-}
+  .logo > img {
+    visibility: visible;
+    position: absolute;
+    left: 45%;
+    transform: translateX(-30%);
+  }
 
-.fireball {
-  position: absolute;
-  right: 3%;  
-  visibility: visible;
-}
+  .fireball {
+    position: absolute;
+    right: 0;
+    visibility: visible;
+  }
 
-  .openbtn, .fa-bars {
+  .openbtn,
+  .fa-bars {
     visibility: visible;
   }
 
@@ -53,12 +54,12 @@
     margin-left: 13px;
   }
 
-  .fa-bars{
+  .fa-bars {
     color: purple;
     font-size: 22px;
   }
 
-  .sidepanel  {    
+  .sidepanel {
     position: fixed;
     z-index: 1;
     height: 55vh;
@@ -88,12 +89,11 @@
     font-size: 36px;
   }
 
- .fa-shop{
+  .fa-shop {
     margin-top: 30px;
     margin-right: 45%;
- } 
+  }
 }
-
 
 @media (max-width: 480px) {
   .banner a {
@@ -103,6 +103,15 @@
     font-size: 20px;
     margin-left: 20px;
   }
+
+  .logo > img {
+    transform: translateX(-50%);
+  }
+
+  .fireball {
+    visibility: hidden;
+  }
+
   .container .rect {
     width: 100%;
     margin: 20px 0;

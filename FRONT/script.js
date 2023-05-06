@@ -1,33 +1,6 @@
-// slider
-
-$(document).ready(() => {
-  var slideIndex = 1;
-  showSlide(slideIndex);
-
-  $(".prev").click (() => {
-    showSlide(slideIndex -= 1);
-  });
-
-  $(".next").click(() => {
-    showSlide(slideIndex += 1);
-  });
-
-  function showSlide(n) {
-    var slides = $(".slide");
-    if (n > slides.length) {
-      slideIndex = 1;
-    }
-    if (n < 1) {
-      slideIndex = slides.length;
-    }
-    slides.removeClass("active");
-    slides.eq(slideIndex - 1).addClass("active");
-  }
-});
-
 
 // Toggle the hamburger menu
-/*const hamburger = document.querySelector('.hamburger');
+const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 
 hamburger.addEventListener('click', () => {
@@ -60,6 +33,6 @@ function checkWindowSize() {
 
 window.addEventListener('resize', checkWindowSize);
 checkWindowSize();
-</script>
+
 
 
