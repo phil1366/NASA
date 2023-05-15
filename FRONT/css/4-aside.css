@@ -25,6 +25,7 @@ aside p {
 @media (max-width: 980px) {
   aside {
     height: 390px;
+    width: 90%;
   }
 
   aside h2 {

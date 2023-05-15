@@ -58,4 +58,14 @@
 	z-index: 100;
 	transition: left 0.65s ease-out;
   }
+
+
+/* media queries */
+
+@media (max-width: 980px) {
+  .slider-container{
+	width: 90%;
+  }
  
+
+}

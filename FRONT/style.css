@@ -11,16 +11,13 @@
 /* .carousel{display:none;} */
 /* footer{display:none;} */
 
-.fa-bars,
-.sidepanel {
+.fa-bars {
   visibility: hidden;
 }
 
 .fireball {
   visibility: hidden;
 }
-
-
 
 /* media queries 980px */
 
@@ -48,47 +45,21 @@
   }
 
   .openbtn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
     border-radius: 5px;
     width: 58px;
     height: 40px;
-    margin-top: -400px;
-    margin-left: 13px;
+    position: absolute;
+    top: 50px;
+    margin-left: 20px;
   }
 
-  .fa-bars {
+  .fa-bars {      
     color: purple;
     font-size: 22px;
-  }
-
-  .sidepanel {
-    position: fixed;
-    z-index: 1;
-    height: 55vh;
-    width: 25%;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 48px;
-  }
-
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-    line-height: 2;
-  }
-
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
   }
 
   .fa-shop {
@@ -118,12 +89,15 @@
     width: 100%;
     margin: 20px 0;
   }
+
   .slider {
     height: 300px;
   }
+
   .slider .carousel-indicators {
     bottom: 5px;
   }
+
   .slider .carousel-inner .carousel-item {
     height: 300px;
   }
