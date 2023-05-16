@@ -35,8 +35,20 @@
         <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>
     </div>
 
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="https://destination-orbite.net/" target="_blank"><i class="fa-solid fa-shop"></i></a>
+    </div>
+
     <!--container -->
     <main>
+        <div id="feature"></div>     
+
         <section class="container">
             <div class="card">
                 <div class="card1">
@@ -135,19 +147,11 @@
         </div>
     </footer>
 
-    <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">Accueil</a>
-        <a href="#">À propos</a>
-        <a href="#">Services</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-        <a href="https://destination-orbite.net/" target="_blank"><i class="fa-solid fa-shop"></i></a>
-    </div>
+    
 
     <script>
         function openNav() {
-            document.getElementById("mySidepanel").style.width = "250px";
+            document.getElementById("mySidepanel").style.width = "170px";
         }
 
         function closeNav() {

@@ -35,6 +35,12 @@ footer {
 
    /* media queries */
 
+
+@media (max-width: 980px) {
+    
+
+}
+
 @media (max-width: 480px) {
    
 footer{
